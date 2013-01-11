@@ -1,0 +1,17 @@
+{
+  "name": "new.perfec.tt",
+  "version": "1.1.0",
+  "private": true,
+  "description": "New https://new.perfec.tt",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~3.0.6"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm":  "1.1.x"
+  }
+}
