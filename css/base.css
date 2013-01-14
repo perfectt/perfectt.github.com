@@ -50,7 +50,7 @@ body {
 }
 section#pages { }
 	section#pages .page {
-		margin-bottom: 60px;
+		margin-bottom: 30px;
     clear: both;
 	}
 	section#pages .page.last { margin-bottom: 0; }
@@ -728,6 +728,9 @@ h1,h2,h3,h4,h5,h6 { font-weight: normal; font-family: 'Varela Round', sans-serif
 h1 {
 	color: #252525;
 	font-size: 35px;
+}
+h1 sup {
+  font-size: 0.2em;
 }
 h2 {
 	color: #252525;
