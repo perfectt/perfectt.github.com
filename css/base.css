@@ -283,17 +283,21 @@ section#intro {
 				font-size: 27px;
 			}
 			.flexslider .slides li .description.dark h2 { color: #fff; }
+      .flexslider .slides li .description.dark h2.far-right {
+        text-align: right;
+        padding-top: 130px;
+      }
 			.flexslider .slides li .description p {
 				margin-bottom: 20px;
 				line-height: 22px;
 				 text-shadow: 0px 1px 2px #fff;
 			}
-			.flexslider .slides li .description.dark p { color: #f9f9f9; text-shadow: 0px 1px 2px #333; }
+			.flexslider .slides li .description.dark p { color: #fff; text-shadow: 0px 1px 2px #333; }
 			.flexslider .slides li .description.dark {
 				text-shadow: ##000 0px 1px 1px;
 			}
       .flexslider .slides li .description.dark .grayed {
-        color: #333;
+        color: #252525;
         text-shadow: 0px 1px 2px #f9f9f9;
       }
 	.flex-container {zoom: 1; position: relative;}
