@@ -1248,6 +1248,12 @@ img { border: none; }
   -o-transition:all 0.2s ease-in;  
   transition:all 0.2s ease-in;
 }
+
+#recaptcha_image {
+  margin-bottom: 13px;
+  border: 1px solid #cfd0d0;
+}
+
 /*--------------------------------------------
 19. Theme Colors
 ---------------------------------------------*/
