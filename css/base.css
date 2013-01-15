@@ -50,7 +50,7 @@ body {
 }
 section#pages { }
 	section#pages .page {
-		margin-bottom: 30px;
+		margin-bottom: 25px;
     clear: both;
 	}
 	section#pages .page.last { margin-bottom: 0; }
@@ -227,7 +227,7 @@ header {
 ---------------------------------------------*/
 section#intro {
 	margin: 0px auto 35px auto;
-	padding-top: 175px;
+	padding-top: 170px;
 }
 	section#intro .logo {
 		overflow: hidden;
@@ -292,6 +292,10 @@ section#intro {
 			.flexslider .slides li .description.dark {
 				text-shadow: ##000 0px 1px 1px;
 			}
+      .flexslider .slides li .description.dark .grayed {
+        color: #333;
+        text-shadow: 0px 1px 2px #f9f9f9;
+      }
 	.flex-container {zoom: 1; position: relative;}
 	.flex-direction-nav {
 	    margin: 0;
@@ -383,9 +387,7 @@ section#pages #about.page .content{
 	overflow: visible;
 }
 div.bio {
-	width: 525px;
 	float: left;
-	margin-bottom: 15px;
 }
 	div.bio img {
 		float: left;
@@ -810,11 +812,16 @@ div.full h4,div.full h5,div.full h6 {
   border-radius: 3px;
   color: #555555;
   display: inline-block;
-  font: bold 10px/12px 'Helvetica Neue',Helvetica,sans-serif;
+  font: 13px 'Helvetica Neue',Helvetica,sans-serif;
   padding: 6px 11px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+.button.wide {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .button:active {
 	-webkit-box-shadow: inset 0px 0px 3px #333;
@@ -870,19 +877,14 @@ div.full h4,div.full h5,div.full h6 {
 }
 .button.pink a { color: #913944 }
 .button.orange {
-  background: #f9bc70; /* Old browsers */
-	background: -moz-linear-gradient(top,  #f9bc70 0%, #d8b541 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9bc70), color-stop(100%,#d8b541)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #f9bc70 0%,#d8b541 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #f9bc70 0%,#d8b541 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #f9bc70 0%,#d8b541 100%); /* IE10+ */
-	background: linear-gradient(top,  #f9bc70 0%,#d8b541 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9bc70', endColorstr='#d8b541',GradientType=0 ); /* IE6-9 */
-  border-color: #f5b74e #e5a73e #d6982f;
-  color: #996633;
-  text-shadow: 0 1px 0 #fedd9b;
+  background-color: #ff6600;
+  background-image: -webkit-linear-gradient(top, #ff6600 0, #d95700 100%);
+  background-image: linear-gradient(to bottom, #ff6600 0, #d95700 100%);
+  border-color: #9b3305;
+  color: white;
+  text-shadow: 0 -1px rgba(0, 0, 0, .5);
 }
-.button.orange a { color: #996633 }
+.button.orange a { color: white }
 .button.green {
   background: #cae285; /* Old browsers */
 	background: -moz-linear-gradient(top,  #cae285 0%, #9fcb57 100%); /* FF3.6+ */
@@ -1110,7 +1112,7 @@ div.tabs { margin-bottom: 20px; }
 		  background: #FBFBFB;
 		  border-width: 1px solid #ddd;
 			border-bottom: none;
-		  color: #424242;
+		  color: #ff6600;
 		  padding-bottom: 9px;
 		}
 		div.tabs .pane {
@@ -1246,17 +1248,17 @@ img { border: none; }
 19. Theme Colors
 ---------------------------------------------*/
 /* Active Nav Link */
-header nav ul li.current a  					 { color: #5a9fcd; }
+header nav ul li.current a  					 { color: #ff6600; }
 /* Slider Description Heading */
-.flexslider .slides li .description h2 { color: #5a9fcd; }
+.flexslider .slides li .description h2 { color: #ff6600; }
 /* Active Portfolio Filter */
-ul.filter_list li.current a 				   { color: #5a9fcd; }
+ul.filter_list li.current a 				   { color: #ff6600; }
 /* Services Icons */
-div#services .box_heading .icon 			 { color: #5a9fcd; }
+div#services .box_heading .icon 			 { color: #ff6600; }
 /* Testimonial Author */
-div.testimonial span 									 { color: #5a9fcd; }
+div.testimonial span 									 { color: #ff6600; }
 /* Links */
-a 																		 { color: #5a9fcd; }
-a:hover																 { color: #5a9fcd; }
+a 																		 { color: #ff6600; }
+a:hover																 { color: #ff6600; }
 /* Back to top hover */
-#toTop:hover 													 { color: #5a9fcd; }
+#toTop:hover 													 { color: #ff6600; }
