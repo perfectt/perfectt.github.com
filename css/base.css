@@ -185,7 +185,7 @@ header {
 		color: #595959;
 		text-decoration: none;
 		font-size: 12px;
-    padding: 15px 40px 0px;
+    padding: 15px 30px 0px;
     height: 90px;
     display: block;
 	}
@@ -227,7 +227,7 @@ header {
 ---------------------------------------------*/
 section#intro {
 	margin: 0px auto 35px auto;
-	padding-top: 170px;
+	padding-top: 180px;
 }
 	section#intro .logo {
 		overflow: hidden;
