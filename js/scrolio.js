@@ -28,7 +28,7 @@ $(document).ready(function() {
 		nextText: "&#9654",
 		slideToStart: 0,
 		pauseOnAction: true,
-		pauseOnHover: false,
+		pauseOnHover: true,
 		controlsContainer: ".flexslider-container"
 	});
 
