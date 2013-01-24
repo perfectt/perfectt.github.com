@@ -28,7 +28,7 @@ $(document).ready(function() {
 		nextText: "&#9654",
 		slideToStart: 0,
 		pauseOnAction: true,
-		pauseOnHover: false,
+		pauseOnHover: true,
 		controlsContainer: ".flexslider-container"
 	});
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
 	// Testimonials
 	function showTestimonial(elem) {
 		var testimonial = $("a", elem);
-		
+
 		$("ul.testimonials li").removeClass("current");		
 		var testimonial_content = "";
 		if(testimonial.data("testimonial")) {
@@ -66,12 +66,12 @@ $(document).ready(function() {
 		$("div.testimonial").html(testimonial_content);
 		$(elem).addClass("current")
 	}
-	
+
 	showTestimonial($("ul.testimonials li.current"));
 	$("ul.testimonials li").hover(function() {
 		showTestimonial($(this));
 	});
-	
+
 	// Twitter widget
 	$("#twitter_stream").tweet({
 		username: "perfecttapp", // Customize your twitter username here
@@ -137,7 +137,7 @@ $(document).ready(function() {
 				}
 			});
 		}
-	
+
 	// Form hints	
 	$("label").inFieldLabels({ fadeOpacity: 0.4 });
 
@@ -148,7 +148,7 @@ $(document).ready(function() {
 			$("html,body").animate({ scrollTop:$('#'+page).offset().top }, 700);
 		}
 	});
-		
+
 	// Portfolio hover
 	$(".filter_items li").each(function() {
 		$("a", this).append('<div class="hover"><span class="icon general-enclosed">d</span></div>');
@@ -162,7 +162,7 @@ $(document).ready(function() {
 			$("a", this).find(".hover").stop(true, true).fadeOut(400);
 		}
 	});
-	
+
 	function initFancyboxes() {
 		$("a.fancybox").fancybox({
 			"transitionIn":			"elastic",
@@ -177,7 +177,7 @@ $(document).ready(function() {
 		});
 	}
 	initFancyboxes();
-	
+
 	// Portfolio sorting
 	var $filterType = $('ul.filter_list li.current a').attr('class');
 
@@ -212,7 +212,7 @@ $(document).ready(function() {
 		}, function() { initFancyboxes(); });			
 		return false;
 	});
-	
+
 	// Tabs
 	$(".tabs").find(".pane:first").show().end().find("ul.nav li:first").addClass("current");
 	$(".tabs ul.nav li a").click(function() {
@@ -222,7 +222,7 @@ $(document).ready(function() {
 		$(".pane", tab_container).hide();
 		$("#"+$(this).attr("class")+".pane", tab_container).show();
 	});
-	
+
 	// Toggle lists
 	$(".toggle_list ul li .title").click(function() {
 		var content_container = $(this).parent().find(".content");
@@ -234,20 +234,20 @@ $(document).ready(function() {
 			$(this).find("a.toggle_link").text($(this).find("a.toggle_link").data("close_text"));
 		}
 	});
-	
+
 	$(".toggle_list ul li .title").each(function() {
 		$(this).find("a.toggle_link").text($(this).find("a.toggle_link").data("open_text"));
 		if($(this).parent().hasClass("opened")) {
 			$(this).parent().find(".content").show();
 		}
 	});
-	
+
 	// Remove margin from last page
 	$("section#pages .page:last").addClass("last");
-		
+
 	// Tooltips
 	$("a[rel=tipsy]").tipsy({fade: true, gravity: 's', offset: 5, html: true});
-	
+
 	$("ul.social li a").each(function() {
 		if($(this).attr("title")) {
 			var title_text = $(this).attr("title");
@@ -263,7 +263,7 @@ $(document).ready(function() {
 				}
 		});
 	});
-	
+
 	// Contact form
 	$("div#contact_form form").submit(function() {
   	var this_form = $(this);
@@ -287,5 +287,5 @@ $(document).ready(function() {
   		}
   	});
   });
-	
+
 });
