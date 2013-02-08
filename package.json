@@ -1,8 +1,8 @@
 {
-  "name": "new.perfec.tt",
+  "name": "perfectt.github.com",
   "version": "1.1.0",
   "private": true,
-  "description": "New https://new.perfec.tt",
+  "description": "https://perfec.tt",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

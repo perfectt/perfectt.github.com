@@ -1,8 +1,10 @@
 
 var express = require('express')
-  , app = express();
+  , app = express()
+  , port = process.env.PORT || 3000;
 
 app.use(express.logger('dev'));
 app.use(express.static(__dirname));
 
-app.listen(process.env.PORT || 3000);
+app.listen(port);
+console.log('perfectt.github.com listening on', port);
